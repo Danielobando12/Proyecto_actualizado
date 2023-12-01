@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pagina Producto</title>
+    <link rel="stylesheet" href="CSS/styleMain.css" />
+</head>
+
+<body>
+    <div class="container-title">
+        <main class="container menu">
+            <nav class="navbar">
+                <ul>
+                    <li>Inicio</li>
+                    <li>Servicio</li>
+                    <li>Producto</li>
+                    <li>Contacto</li>
+                </ul>
+            </nav>
+         
+        </main>
+    </div>
+
+    <section class="container-icon" id="product-container"></section>
+    
+    <label for="precioFiltro">Precio:</label>
+    <input type="number" id="precioFiltro" min="0">
+    <label for="modeloFiltro">Modelo:</label>
+    <input type="text" id="modeloFiltro">
+    <label for="silindrajeFiltro">Cilindraje:</label>
+    <input type="text" id="silindrajeFiltro">
+    <button id="borrarFiltro">Borrar Filtro</button>
+
+    <h2>Productos Relacionados</h2>
+    <div id="productList" class="product-list"></div>
+    
+
+    <div id="totalPages"></div>
+    <div id="totalElements"></div>
+    <button id="botonAnterior">Anterior</button>
+    <button id="botonSiguiente">Siguiente</button>
+
+   
+
+        <div class="container-info">
+            <div class="info-section">
+                <h3>Ventas de Motos</h3>
+                <p>Explora nuestra amplia gama de motocicletas para encontrar la perfecta para ti.</p>
+            </div>
+            <div class="info-section">
+                <h3>Contacto</h3>
+                <p>Ciudad: Ciudad Ejemplo</p>
+                <p>Teléfono: +123 456 789</p>
+                <!-- Agrega más información según sea necesario -->
+            </div>
+        </div>
+    </footer>
+
+    <script src="/JS/Data-Producto.JS">
+    </script>
+</body>
+
+</html>

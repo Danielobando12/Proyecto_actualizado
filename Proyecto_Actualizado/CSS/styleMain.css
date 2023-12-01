@@ -1,0 +1,297 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;500;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Ubuntu';
+  margin: 20px;
+  overflow-x: hidden;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 100%; /* Ajusta el margen mínimo */
+  box-sizing: border-box;
+}
+
+.container-con {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.navbar li {
+  margin: 0 15px;
+  font-size: 20px;
+}
+
+.navbar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+h1 {
+  margin-top: 20px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  padding: 30px;
+  justify-content: center;
+}
+
+.container-title {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  position: relative;
+}
+
+.container.menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.container-social {
+  text-align: right;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  align-items: center;
+  border-bottom: 1px solid #e4e4e4;
+}
+
+/* Estilos para los elementos dentro de .container-social */
+.container-social span {
+  display: flex;
+  font-weight: 300;
+  color: #252525;
+}
+
+/* Estilos para .container-buttons-social */
+.container-buttons-social {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+    flex-direction: column;
+}
+
+/* Estilos para el pie de página */
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+
+
+#productList {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 5px;
+  margin-top: 10px; /* Ajuste de margen superior */
+}
+
+.product {
+  background-color: aqua;
+  text-align: center;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.product img {
+  width: 100%;
+  height: auto;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.cerrarSesion {
+  float: right;
+  background-color: #fff;
+  color: #333;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.cerrarSesion:hover {
+  background-color: #f49595;
+}
+
+.product-list {
+  margin-top: 20px;
+}
+
+#borrarFiltro {
+  background-color: #f44336;
+  margin-left: 10px;
+}
+
+#botonAnterior,
+#botonSiguiente,
+#borrarFiltro {
+  background-color: rgb(39, 91, 233);
+  color: rgb(29, 4, 4);
+  border: none;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+#botonAnterior:hover,
+#botonSiguiente:hover,
+#borrarFiltro:hover {
+  background-color: #89fff5;
+}
+
+#totalPages,
+#totalElements {
+  margin-top: 15px;
+}
+
+@media only screen and (max-width: 768px) {
+  body {
+    font-size: 16px;
+  }
+
+  .navbar li {
+    font-size: 16px;
+    margin: 0 10px;
+  }
+
+  .container-title {
+    padding: 15px;
+  }
+
+  header {
+    padding: 15px;
+  }
+
+  .product {
+    margin-bottom: 10px;
+  }
+
+  .container.menu {
+    padding: 15px;
+  }
+
+  .container-social {
+    padding: 10px 0;
+  }
+
+  .container-buttons-social {
+    gap: 10px;
+  }
+
+  footer {
+    padding: 15px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  body {
+    font-size: 14px;
+  }
+
+  .navbar li {
+    font-size: 14px;
+    margin: 0 5px;
+  }
+
+  .container-title {
+    padding: 10px;
+  }
+
+  header {
+    padding: 10px;
+  }
+
+  .product {
+    margin-bottom: 5px;
+  }
+
+  .container.menu {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navbar ul {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .navbar li {
+    margin: 5px 0;
+  }
+
+  .container-social {
+    flex-direction: column;
+  }
+
+  .container-buttons-social {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+@media only screen and (max-width: 360px) {
+  body {
+    font-size: 12px;
+  }
+
+  .navbar li {
+    font-size: 12px;
+    margin: 0 3px;
+  }
+
+  .container-title {
+    padding: 8px;
+  }
+
+  header {
+    padding: 8px;
+  }
+
+  .product {
+    margin-bottom: 3px;
+  }
+
+  .container.menu {
+    padding: 10px;
+  }
+
+  .container-social {
+    padding: 8px 0;
+  }
+
+  footer {
+    padding: 10px;
+  }
+}
